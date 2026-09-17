@@ -642,11 +642,11 @@
         }
 
         // --- PART 3: QUIZ LOGIC ---
-        const answers = { 1: 'B', 2: 'B', 3: 'B' };
+        const answers = { 1: 'B', 2: 'B' };
         const explanations = {
-            1: "Correct! To find -5 in 4-bit Two's Complement: Start with +5 (0101), invert bits to get 1010 (One's Complement), and add 1 to get 1101.",
+            1: "Correct! To find -5 in 4-bit Two's Complement: Start with +5 (0101), invert bits to get 1010 (One's Complement), and add 1 to get 1011.",
             2: "Correct! Because positive numbers include zero (0000), there is one more positive pattern than negative patterns around a single zero, yielding -8 through +7.",
-            3: "Correct! Standard hardware overflow in Two's Complement occurs when the carry into the sign bit and carry out of the sign bit do not match (XOR is 1)."
+            
         };
 
         function checkAnswer(qNum, selected) {
